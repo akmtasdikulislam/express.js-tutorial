@@ -1,0 +1,19 @@
+{
+  "name": "response-object",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Akm Tasdikul Islam",
+  "license": "ISC",
+  "description": "In this lesson we will learn about Express.js's Response Object",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
