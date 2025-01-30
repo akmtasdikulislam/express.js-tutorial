@@ -11,6 +11,7 @@
   "license": "ISC",
   "description": "In this lesson we will learn about Express.js's Response Object",
   "dependencies": {
+    "ejs": "^3.1.10",
     "express": "^4.21.2"
   },
   "devDependencies": {
