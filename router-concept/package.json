@@ -1,0 +1,18 @@
+{
+  "name": "router-concept",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Akm Tasdikul Islam",
+  "license": "ISC",
+  "description": "In this lesson, we will learn about routing in Express.js. We will also learn how to use different types of routes in Express.js.",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
