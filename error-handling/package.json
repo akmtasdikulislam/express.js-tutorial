@@ -4,6 +4,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
+    "production": "set NODE_ENV=production&& nodemon index.js",
+    "error": "NODE_ENV = production সেট করলে রেস্পন্সে আর stack trace দেখাবে না",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
