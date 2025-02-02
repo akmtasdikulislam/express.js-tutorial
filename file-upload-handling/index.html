@@ -18,125 +18,22 @@
       :root {
         font-family: "Open Sans", sans-serif;
       }
-
-      /* Container for the file upload form */
-      .file-upload-container {
-        max-width: 500px;
-        margin: 50px auto;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        background-color: #fff;
-      }
-
-      /* Form layout styles */
-      .file-upload-form {
+      body {
         display: flex;
-        flex-direction: column;
-        gap: 20px;
-      }
-
-      /* Custom file input wrapper */
-      .file-input-wrapper {
-        position: relative;
-        overflow: hidden;
-        display: inline-block;
-      }
-
-      /* Styled label for file input */
-      .file-input-label {
-        background-color: #4caf50;
-        color: white;
-        padding: 12px 24px;
-        border-radius: 5px;
-        cursor: pointer;
-        display: inline-block;
-        transition: background-color 0.3s ease;
-      }
-
-      .file-input-label:hover {
-        background-color: #45a049;
-      }
-
-      /* Hide the default file input */
-      .file-input {
-        position: absolute;
-        left: 0;
-        top: 0;
-        opacity: 0;
-        cursor: pointer;
-      }
-
-      /* Display selected file name */
-      .selected-file-name {
-        margin-top: 10px;
-        color: #666;
-        font-size: 0.9em;
-      }
-
-      /* Submit button styles */
-      .submit-button {
-        background-color: #2196f3;
-        color: white;
-        padding: 12px 24px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        font-family: inherit;
-      }
-
-      .submit-button:hover {
-        background-color: #1976d2;
-      }
-
-      /* Responsive styles */
-      @media (max-width: 600px) {
-        .file-upload-container {
-          margin: 20px;
-          padding: 15px;
-        }
+        align-items: center;
+        justify-content: center;
       }
     </style>
   </head>
   <body>
-    <!-- Main file upload container -->
-    <div class="file-upload-container">
-      <!-- File upload form -->
-      <form
-        class="file-upload-form"
-        action="http://localhost:3000/"
-        method="post"
-        enctype="multipart/form-data"
-      >
-        <!-- Custom file input wrapper -->
-        <div class="file-input-wrapper">
-          <label class="file-input-label">
-            Choose File
-            <input
-              type="file"
-              class="file-input"
-              onchange="updateFileName(this)"
-              aria-label="Choose file to upload"
-            />
-          </label>
-          <!-- Display area for selected file name -->
-          <div class="selected-file-name" aria-live="polite"></div>
-        </div>
-        <button type="submit" class="submit-button">Upload File</button>
-      </form>
-    </div>
-
-    <!-- JavaScript for handling file selection -->
-    <script>
-      /**
-       * Updates the displayed filename when a file is selected
-       * @param {HTMLInputElement} input - The file input element
-       */
-      function updateFileName(input) {
-        const fileName = input.files[0]?.name || "No file chosen";
-        input.parentElement.nextElementSibling.textContent = fileName;
-      }
-    </script>
+    <form
+      action="http://localhost:3000/"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <input type="file" name="avatar" />
+      <input type="file" name="doc" />
+      <input type="submit" value="Submit" />
+    </form>
   </body>
 </html>
